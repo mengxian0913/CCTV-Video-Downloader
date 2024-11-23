@@ -37,7 +37,7 @@ class App:
 
     def __get_length_of_video(self, length) -> int:
         videoLength = length.split(':')
-        totalLength = int(videoLength[0]) * 60 * 60 + int(videoLength[1]) * 60 + int(videoLength[2])
+        totalLength = (int(videoLength[0]) * 60 * 60 + int(videoLength[1]) * 60 + int(videoLength[2])) // 10
         return totalLength
     
     def __get_api_response(self, api_url):
