@@ -44,8 +44,8 @@ class Downloader:
             print(output)
             
             # 檢查輸出文件
-            if os.path.exists("output.mp4"):
-                print("合併完成: output.mp4")
+            if os.path.exists(f"{video_name}.mp4"):
+                print(f"合併完成: {video_name}.mp4")
             else:
                 print("合併失敗")
                 
